@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        'header header header header' 70px
+        'left-menu main settings right-menu' 1fr/
+        200px 1fr 200px 100px;
+}
+
+.header {
+    grid-area: header;
+    padding: 1rem;
+    background-color: white;
+
+}
+
+.header .menu-logo {
+    height: 20px;
+    width: 30px;
+    background: none;
+    margin-bottom: 10px;
+
+
+
+}
+
+.gmail-logo {
+    height: 40px;
+    width: 120px;
+    margin-left: 20px;
+    ;
+
+}
+
+.buttons button {
+    margin-left: 20px;
+    border: none;
+    background: none;
+}
+
+
+.left-menu {
+    grid-area: left-menu;
+    padding: 1rem;
+    background-color: rgb(242, 202, 150);
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: rgb(154, 131, 102);
+}
+
+.settings {
+    grid-area: settings;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    padding: 1rem;
+    background-color: rgb(234, 156, 54);
+}
